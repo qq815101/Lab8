@@ -72,11 +72,11 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     public void deleteCity(City city)throws IllegalAccessException {
-        //if (cities.contains(city)){
-            //cities.remove(city);
-        //} //else {
-            //throw new IllegalAccessException();
-        //}
+        if (cities.contains(city)){
+            cities.remove(city);
+        } else {
+            throw new IllegalAccessException();
+        }
 
     }
 

@@ -55,17 +55,17 @@ public class CustomListTest {
 
     }
 
-    //@Test
-    //void testDeleteCityException() throws IllegalAccessException {
-        //list = MockCityList();
-        //City city = new City("Estevan", "SK");
-        //list.addCity(city);
-        //assertEquals(1, list.getCities().size());
-        //list.deleteCity(city);
-        //assertThrows(IllegalAccessException.class, () -> {
-            //list.deleteCity(city);
-        //});
-    //}
+    @Test
+    void testDeleteCityException() throws IllegalAccessException {
+        list = MockCityList();
+        City city = new City("Estevan", "SK");
+        list.addCity(city);
+        assertEquals(1, list.getCities().size());
+        list.deleteCity(city);
+        assertThrows(IllegalAccessException.class, () -> {
+            list.deleteCity(city);
+        });
+    }
 
     //@Test
     //void testCountCities() {
