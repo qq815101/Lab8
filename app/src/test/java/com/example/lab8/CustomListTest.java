@@ -44,16 +44,16 @@ public class CustomListTest {
 
 
     }
-    //@Test
-    //public void testDeleteCity() throws IllegalAccessException {
-        //list = MockCityList();
-        //City city = new City("Estevan", "SK");
-        //list.addCity(city);
-        //assertEquals(1, list.getCities().size());
-        //list.deleteCity(city);
-        //assertEquals(0, list.getCities().size());
+    @Test
+    public void testDeleteCity() throws IllegalAccessException {
+        list = MockCityList();
+        City city = new City("Estevan", "SK");
+        list.addCity(city);
+        assertEquals(1, list.getCities().size());
+        list.deleteCity(city);
+        assertEquals(0, list.getCities().size());
 
-    //}
+    }
 
     //@Test
     //void testDeleteCityException() throws IllegalAccessException {
