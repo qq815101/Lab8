@@ -67,13 +67,13 @@ public class CustomListTest {
         });
     }
 
-    //@Test
-    //void testCountCities() {
-        //list = MockCityList();
-        //City city = new City("Regina", "Saskatchewan");
-        //list.addCity(city);
-        //assertEquals(1, list.getCount());
-    //}
+    @Test
+    void testCountCities() {
+        list = MockCityList();
+        City city = new City("Regina", "Saskatchewan");
+        list.addCity(city);
+        assertEquals(1, list.getCount());
+    }
 
 
 }
