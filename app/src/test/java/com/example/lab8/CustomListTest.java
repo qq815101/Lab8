@@ -17,7 +17,8 @@ public class CustomListTest {
      * create a mocklist for my citylist * @return
      */
     public CustomList MockCityList(){
-        list = new CustomList(null,new ArrayList<>()); return list;
+        list = new CustomList(null,new ArrayList<>());
+        return list;
     }
 
     /**
@@ -67,7 +68,7 @@ public class CustomListTest {
     }
 
     @Test
-    void testCountCities() throws IllegalAccessException {
+    void testCountCities() {
         list = MockCityList();
         City city = new City("Regina", "Saskatchewan");
         list.addCity(city);
